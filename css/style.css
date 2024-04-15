@@ -1,0 +1,147 @@
+/* START: importing other css files */
+@import url('./sections/header.css');
+@import url('./sections/hero.css');
+@import url('./sections/courses.css');
+/* END: importing other css files   */
+
+/* START: font */
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'),
+    url(../assets/fonts/roboto-regular-webfont.woff2) format('woff2'),
+    url(../assets/fonts/roboto-regular-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'cursive';
+  src: url(../assets/fonts/bernerbasisschrift1-webfont.woff2) format('woff2'),
+    url(../assets/fonts/bernerbasisschrift1-webfont.woff) format('woff');
+}
+/* END: font */
+
+:root {
+  --color-beige: #fff0e5;
+  --color-yellow: #ffd300;
+  --color-violet-blue: #5533ff;
+  --color-violet-hover: #3a10e5;
+  --color-primary: #10162f;
+  --color-white: #fefefe;
+  --color-grey: rgb(227, 227, 227);
+  --color-light-green: #eafdc6;
+  --color-light-blue: #d3f2ff;
+  --color-grid: #3a10e5;
+
+  --primary__header-index: 100;
+  --primary__menu-index: 90;
+}
+/* START: reset & common */
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  line-height: calc(1em + 0.5rem);
+}
+
+body {
+  font-family: 'Roboto', sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue';
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+figure,
+video,
+canvas,
+.code__academy-logo {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+h2 {
+  text-transform: none;
+}
+li:focus {
+  border: 1px solid;
+}
+.new {
+  background-color: var(--color-yellow);
+  border-radius: 40px;
+  padding-block: 0.2rem;
+  padding-inline: 0.5rem;
+  font-family: cursive, 'Roboto', sans-serif;
+  font-size: 0.6rem;
+  color: var(--color-primary);
+}
+.sign-up {
+  color: var(--color-white);
+  background-color: var(--color-violet-hover);
+}
+.yellow-btn {
+  color: var(--color-primary);
+  background-color: var(--color-yellow);
+}
+.log-in {
+  color: var(--color-violet-hover);
+}
+.log-in:hover {
+  background-color: var(--color-grey);
+}
+.yellow-btn,
+.sign-up,
+.log-in {
+  border-radius: 4px;
+  padding: 0.5rem 0.8rem;
+  font-weight: bold;
+  width: fit-content;
+  text-transform: capitalize;
+}
+.yellow-btn span {
+  color: var(--color-primary);
+}
+.hide {
+  display: none !important;
+}
+.menuBack {
+  display: block;
+  background-color: red;
+}
+.hidden {
+  overflow: hidden;
+}
+.common {
+  color: var(--color-white);
+}
+.common > .cursive {
+  font-family: cursive, 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+.common h2 {
+  font-size: 2.75rem;
+}
+/* END: reset & common */
